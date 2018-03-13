@@ -1,7 +1,7 @@
 'user strict';
 
 angular.
-	module('phonecatApp').
+	module('phoneList').
 	component('phoneList', {
 		template:
 			'<ul>' +
