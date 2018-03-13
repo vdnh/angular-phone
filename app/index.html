@@ -4,16 +4,12 @@
   <title>Google Phone Gallery</title>
   <script src="bower_components/angular/angular.js"></script>
   <script src="app.js"></script>
+  <script src="phone-list.component.js"></script>
 </head>
-<body ng-controller="PhoneListController">
+<body>
 
-  <ul>
-    <li ng-repeat="phone in phones">
-      <span>{{phone.name}}</span>
-      <p>{{phone.snippet}}</p>
-    </li>
-    <p>Total of phones : {{phones.length}}  from the stock of {{name}}</p>
-  </ul>
+  <!-- use a custom component to render a list of phones -->
+  <phone-list></phone-list>
 
   <table>
   	<tr><th>Row number</th></tr> 
