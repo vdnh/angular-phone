@@ -1,7 +1,15 @@
-<ul>
-	<li ng-repeat= 'phone in $ctrl.phones'>
-		<span>{{phone.name}}</span>
-		<p>{{phone.snippet}}</p>
-	</li>
-	<span>The galery of {{$ctrl.name}}</span>
-</ul>
+<div class="row">
+	<dir class="col-md-2">
+		Search: <input ng-model='$ctrl.query'>		
+	</dir>
+	<div class="phones">
+		<ul>
+			<li ng-repeat= 'phone in $ctrl.phones | filter:$ctrl.query'>
+				<span>{{phone.name}}</span>
+				<p>{{phone.snippet}}</p>
+				value in search now : <span ng-bind='$ctrl.query'></span>
+			</li>
+			<span>The galery of {{$ctrl.name}} </span>
+		</ul>
+	</div>
+</div>

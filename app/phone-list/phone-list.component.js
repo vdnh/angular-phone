@@ -24,7 +24,7 @@ angular.
   					snippet : 'The next generation'
   				},
   				{
-  					name : 'Dell TB',
+  					name : 'Motorola TB',
   					snippet : 'Tablet for the world.'
   				}
   			];
