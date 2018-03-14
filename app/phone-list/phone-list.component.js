@@ -1,34 +1,26 @@
 'user strict';
 
 angular.
-	module('phoneList').
-	component('phoneList', {
-		  /*
-      template:
-			'<ul>' +
-    			'<li ng-repeat="phone in $ctrl.phones">' + 
-      			'<span>{{phone.name}}</span>' + 
-      			'<p>{{phone.snippet}}</p>' + 
-    			'</li>' + 
-    			'<p>Total of phones : {{phones.length}}  from the stock of {{$ctrl.name}}</p>' +
-  			'</ul>',//*/
-        templateUrl : 'phone-list/phone-list.template.html',
-  		controller: function PhoneListController(){
-  			this.phones = [
-  				{
-  					name : 'Nexus S',
-  					snippet : 'Fast just got faser with Nexus'
-  				},
-  				{
-  					name : 'Motorola S',
-  					snippet : 'The next generation'
-  				},
-  				{
-  					name : 'Dell TB',
-  					snippet : 'Tablet for the world.'
-  				}
-  			];
-  			this.name = 'vo dinh';
-  		}
+  module('phoneList').
+  component('phoneList', {
+    templateUrl: 'phone-list/phone-list.template.html',
+    controller: function PhoneListController() {
+      this.phones = [
+        {
+          name: 'Nexus S',
+          snippet: 'Fast just got faster with Nexus S.',
+          age: 1
+        }, {
+          name: 'Motorola XOOM™ with Wi-Fi',
+          snippet: 'The Next, Next Generation tablet.',
+          age: 2
+        }, {
+          name: 'MOTOROLA XOOM™',
+          snippet: 'The Next, Next Generation tablet.',
+          age: 3
+        }
+      ];
 
-	});
+      this.orderProp = 'age';
+    }
+  });
