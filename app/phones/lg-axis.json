@@ -15,7 +15,8 @@
     "camera": {
         "features": [
             "Flash", 
-            "Video"
+            "Video",
+            "Focus Zoom 25X"
         ], 
         "primary": "3.0 megapixels"
     }, 
